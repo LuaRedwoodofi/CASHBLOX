@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ma page avec chargement vidéo et redirection</title>
+    <style>
+        /* Styles optionnels pour la mise en page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <script>
+        // Redirection vers le serveur Discord après 2 secondes
+        setTimeout(function() {
+            window.location.href = 'https://discord.gg/f5cBah33Bb';
+        }, 2000);
+    </script>
+</head>
+<body>
+    <h1>Ma page avec chargement vidéo</h1>
+    
+    <!-- Balise <video> pour afficher la vidéo -->
+    <video src="https://i.imgur.com/SoX8m8w.mp4" autoplay loop muted controls></video>
+</body>
+</html>
